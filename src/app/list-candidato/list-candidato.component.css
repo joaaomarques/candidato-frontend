@@ -1,0 +1,17 @@
+.small-form{
+    flex: auto;
+    min-width: 0;
+    width: 150px;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.mid-form{
+  flex: auto;
+  min-width: 0;
+  width: 160px;
+  position: relative;
+  box-sizing: border-box;
+
+}

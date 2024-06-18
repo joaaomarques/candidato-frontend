@@ -1,0 +1,15 @@
+<form class="login-form">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label"></label>
+    <input class="form-control" type="text" [(ngModel)]="loginRequest.username" name="username" placeholder="Username" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label"></label>
+    <input class="form-control" type="password" [(ngModel)]="loginRequest.password" name="password" placeholder="Senha" required>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="onLogin()">Login</button>
+  <div class="card-title" style="margin-top: 15px;">
+    <a routerLink="/create-usuario" (click)="createUsuario()">Novo Usuário? Registre-se aqui</a>
+</div>
+</form>
+

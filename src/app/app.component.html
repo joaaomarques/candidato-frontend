@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="login" routerLinkActive="active" class="nav-link">Login</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="candidatos" routerLinkActive="active" class="nav-link" *ngIf="isLoggedIn() == true">Candidatos</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="create-candidato" routerLinkActive="active" class="nav-link" *ngIf="isLoggedIn() == true">Novo Candidato</a>
+    </li>
+
+  </ul>
+
+</nav>
+<button type="button" class="btn btn-dark" (click)="logOut()" *ngIf="isLoggedIn() == true">LogOut</button>
+
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer class="footer">
+
+  <div class="container">
+
+    <span>Candidatos App</span>
+
+  </div>
+</footer>
